@@ -39,4 +39,18 @@ public class ContactHelper extends HelperBase {
 		click(By.linkText("home page"));
 	}
 
+	public void deleteContact() {
+		click(By.xpath("//input[@value='Delete']"));	
+	}
+	
+	public void selectContactByEdit(int index) {
+		//click(By.xpath("//input[@name='selected[]'][" + index +"]"));
+		driver.get(manager.baseUrl + "/addressbookv4.1.4/edit.php?id=" + index);
+	}
+	
+	public void submitContactModification() {
+		click(By.name("update"));
+		
+	}
+	
 }
