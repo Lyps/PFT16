@@ -1,259 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="22" passed="22">
+<testng-results skipped="0" failed="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48788" started-at="2014-01-11T07:36:07Z" finished-at="2014-01-11T07:36:55Z">
+  <suite name="Default suite" duration-ms="792926" started-at="2014-01-23T13:46:37Z" finished-at="2014-01-23T13:59:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48788" started-at="2014-01-11T07:36:07Z" finished-at="2014-01-11T07:36:55Z">
-      <class name="com.example.tests.GroupRemovalTests">
-        <test-method status="PASS" signature="deleteSomeGroup()[pri:0, instance:com.example.tests.GroupRemovalTests@5c33e2dc]" name="deleteSomeGroup" duration-ms="1671" started-at="2014-01-11T13:36:13Z" finished-at="2014-01-11T13:36:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSomeGroup -->
-      </class> <!-- com.example.tests.GroupRemovalTests -->
-      <class name="com.example.tests.GroupCreationTests">
-        <test-method status="PASS" signature="testGroupCreationwithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@12f40243]" name="testGroupCreationwithValidData" duration-ms="1425" started-at="2014-01-11T13:36:33Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test1550123733, header=, footer=]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationwithValidData -->
-        <test-method status="PASS" signature="testGroupCreationwithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@12f40243]" name="testGroupCreationwithValidData" duration-ms="1312" started-at="2014-01-11T13:36:35Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test-412336585, header=test2006471715, footer=]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationwithValidData -->
-        <test-method status="PASS" signature="testGroupCreationwithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@12f40243]" name="testGroupCreationwithValidData" duration-ms="1440" started-at="2014-01-11T13:36:36Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test927114986, header=test-1260507582, footer=test1768092044]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationwithValidData -->
-        <test-method status="PASS" signature="testGroupCreationwithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@12f40243]" name="testGroupCreationwithValidData" duration-ms="1478" started-at="2014-01-11T13:36:37Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test294497544, header=test-2053846918, footer=test-1385542549]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationwithValidData -->
-        <test-method status="PASS" signature="testGroupCreationwithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@12f40243]" name="testGroupCreationwithValidData" duration-ms="1535" started-at="2014-01-11T13:36:39Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test-269006268, header=test1765772560, footer=test-555352400]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationwithValidData -->
-      </class> <!-- com.example.tests.GroupCreationTests -->
-      <class name="com.example.tests.ContactRemovalTests">
-        <test-method status="PASS" signature="deleteSomeContact()[pri:0, instance:com.example.tests.ContactRemovalTests@51c0866d]" name="deleteSomeContact" duration-ms="1425" started-at="2014-01-11T13:36:54Z" finished-at="2014-01-11T13:36:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSomeContact -->
-      </class> <!-- com.example.tests.ContactRemovalTests -->
+    <test name="Default test" duration-ms="792926" started-at="2014-01-23T13:46:37Z" finished-at="2014-01-23T13:59:50Z">
       <class name="com.example.tests.ContactModificationTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactModificationTests@2788f0f7]" name="setUp" is-config="true" duration-ms="6660" started-at="2014-01-11T13:36:07Z" finished-at="2014-01-11T13:36:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactModificationTests@549f4bec]" name="setUp" is-config="true" duration-ms="7115" started-at="2014-01-23T19:46:37Z" finished-at="2014-01-23T19:46:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@2788f0f7]" name="modifySomeContact" duration-ms="2170" started-at="2014-01-11T13:36:22Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:25Z">
+        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@549f4bec]" name="modifySomeContact" duration-ms="274247" started-at="2014-01-23T19:46:44Z" data-provider="randomValidContactGenerator" finished-at="2014-01-23T19:51:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [firstName=, lastName=test694006137, address=test406434133, homePhoneFirst=test-1884212971, mobilePhone=test1818886550, workPhone=test661418640, mailFirst=test557918764, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-2011972259, homePhoneSecond=test1874994049, firstPlusLastName= test694006137]]]>
+                <![CDATA[ContactData [firstName=, lastName=, address=, homePhoneFirst=test1765384434, mobilePhone=test888422359, workPhone=test1081746418, mailFirst=test1092341235, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-1362587085, homePhoneSecond=test754991884]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@2788f0f7]" name="modifySomeContact" duration-ms="2100" started-at="2014-01-11T13:36:25Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:27Z">
+        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@549f4bec]" name="modifySomeContact" duration-ms="7798" started-at="2014-01-23T19:51:18Z" data-provider="randomValidContactGenerator" finished-at="2014-01-23T19:51:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [firstName=test-1462097752, lastName=test-1035824457, address=, homePhoneFirst=test-223086550, mobilePhone=test-732140224, workPhone=test1535701130, mailFirst=, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-439374948, homePhoneSecond=, firstPlusLastName=test-1462097752 test-1035824457]]]>
+                <![CDATA[ContactData [firstName=, lastName=, address=test-2011051238, homePhoneFirst=, mobilePhone=, workPhone=test-1470167878, mailFirst=, mailSecond=test-1083804845, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test1350413968, homePhoneSecond=test266116825]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expected: <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test1765384434, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test2105961518, address=null, homePhoneFirst=test-451593914, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test871027728, address=null, homePhoneFirst=test-1408648887, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=test-2011051238, homePhoneFirst=, mobilePhone=, workPhone=test-1470167878, mailFirst=, mailSecond=test-1083804845, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test1350413968, homePhoneSecond=test266116825], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test1414031120, lastName=, address=null, homePhoneFirst=test-964250360, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]]]><![CDATA[>
+     but: was <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1470167878, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test1765384434, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test871027728, address=null, homePhoneFirst=test-1408648887, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-797934947, lastName=, address=null, homePhoneFirst=test1654761088, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test1414031120, lastName=, address=null, homePhoneFirst=test-964250360, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]><![CDATA[]]]]><![CDATA[>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expected: <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test1765384434, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test2105961518, address=null, homePhoneFirst=test-451593914, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test871027728, address=null, homePhoneFirst=test-1408648887, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=test-2011051238, homePhoneFirst=, mobilePhone=, workPhone=test-1470167878, mailFirst=, mailSecond=test-1083804845, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test1350413968, homePhoneSecond=test266116825], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test1414031120, lastName=, address=null, homePhoneFirst=test-964250360, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]]]><![CDATA[>
+     but: was <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1470167878, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test1765384434, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test871027728, address=null, homePhoneFirst=test-1408648887, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-797934947, lastName=, address=null, homePhoneFirst=test1654761088, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test1414031120, lastName=, address=null, homePhoneFirst=test-964250360, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]]]><![CDATA[>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeContact -->
+        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@549f4bec]" name="modifySomeContact" duration-ms="126448" started-at="2014-01-23T19:51:26Z" data-provider="randomValidContactGenerator" finished-at="2014-01-23T19:53:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ContactData [firstName=, lastName=, address=test-1897180280, homePhoneFirst=test-1090518411, mobilePhone=, workPhone=test937873140, mailFirst=, mailSecond=test1891759071, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=, homePhoneSecond=]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@2788f0f7]" name="modifySomeContact" duration-ms="2153" started-at="2014-01-11T13:36:27Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:29Z">
+        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@549f4bec]" name="modifySomeContact" duration-ms="244147" started-at="2014-01-23T19:53:33Z" data-provider="randomValidContactGenerator" finished-at="2014-01-23T19:57:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [firstName=test224778262, lastName=test-597284796, address=test363583376, homePhoneFirst=test187257885, mobilePhone=, workPhone=, mailFirst=, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-319022744, homePhoneSecond=, firstPlusLastName=test224778262 test-597284796]]]>
+                <![CDATA[ContactData [firstName=, lastName=test-1659859774, address=, homePhoneFirst=test-424563623, mobilePhone=test-160052800, workPhone=test396772429, mailFirst=, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=, homePhoneSecond=]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expected: <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1470167878, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1090518411, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test-1659859774, address=, homePhoneFirst=test-424563623, mobilePhone=test-160052800, workPhone=test396772429, mailFirst=, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=, homePhoneSecond=], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-797934947, lastName=, address=null, homePhoneFirst=test1654761088, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test1414031120, lastName=, address=null, homePhoneFirst=test-964250360, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]]]><![CDATA[>
+     but: was <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1470167878, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1090518411, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test-1659859774, address=null, homePhoneFirst=test-424563623, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test871027728, address=null, homePhoneFirst=test-1408648887, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-797934947, lastName=, address=null, homePhoneFirst=test1654761088, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]><![CDATA[]]]]><![CDATA[>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expected: <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1470167878, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1090518411, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test-1659859774, address=, homePhoneFirst=test-424563623, mobilePhone=test-160052800, workPhone=test396772429, mailFirst=, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=, homePhoneSecond=], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-797934947, lastName=, address=null, homePhoneFirst=test1654761088, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test1414031120, lastName=, address=null, homePhoneFirst=test-964250360, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]]]><![CDATA[>
+     but: was <[ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1470167878, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-201639976, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=, address=null, homePhoneFirst=test-1090518411, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test-1659859774, address=null, homePhoneFirst=test-424563623, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test353544346, address=null, homePhoneFirst=test-521837372, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=, lastName=test871027728, address=null, homePhoneFirst=test-1408648887, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1056255607, lastName=test1617584618, address=null, homePhoneFirst=test-691599604, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-1149990104, lastName=test-289211272, address=null, homePhoneFirst=test-429841836, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test-797934947, lastName=, address=null, homePhoneFirst=test1654761088, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null], ContactData [firstName=test456930988, lastName=test-1160339134, address=null, homePhoneFirst=test154820412, mobilePhone=null, workPhone=null, mailFirst=null, mailSecond=null, birthDay=null, birthMonth=null, birthYear=null, groupForContact=null, addressSecond=null, homePhoneSecond=null]]]]><![CDATA[>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeContact -->
+        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@549f4bec]" name="modifySomeContact" duration-ms="132956" started-at="2014-01-23T19:57:37Z" data-provider="randomValidContactGenerator" finished-at="2014-01-23T19:59:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ContactData [firstName=test961242978, lastName=test-937027039, address=test-1047385092, homePhoneFirst=test-1193761089, mobilePhone=test1192485924, workPhone=test603604463, mailFirst=test1410548295, mailSecond=test505135151, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=, homePhoneSecond=]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@2788f0f7]" name="modifySomeContact" duration-ms="2205" started-at="2014-01-11T13:36:29Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ContactData [firstName=, lastName=test243729272, address=test-1017740346, homePhoneFirst=test-2105207303, mobilePhone=, workPhone=test1932895982, mailFirst=, mailSecond=test-1289525544, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test1421663064, homePhoneSecond=test192000019, firstPlusLastName= test243729272]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeContact -->
-        <test-method status="PASS" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@2788f0f7]" name="modifySomeContact" duration-ms="2285" started-at="2014-01-11T13:36:31Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ContactData [firstName=, lastName=test1585396551, address=, homePhoneFirst=, mobilePhone=test-1482216318, workPhone=test-1479107337, mailFirst=, mailSecond=test-2083067953, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test263045309, homePhoneSecond=test-43094325, firstPlusLastName= test1585396551]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactModificationTests@2788f0f7]" name="tearDown" is-config="true" duration-ms="215" started-at="2014-01-11T13:36:55Z" finished-at="2014-01-11T13:36:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactModificationTests@549f4bec]" name="tearDown" is-config="true" duration-ms="185" started-at="2014-01-23T19:59:50Z" finished-at="2014-01-23T19:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.ContactModificationTests -->
-      <class name="com.example.tests.ContactCreationTests">
-        <test-method status="PASS" signature="testContactCreationWithValidData(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@36b98809]" name="testContactCreationWithValidData" duration-ms="2392" started-at="2014-01-11T13:36:41Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ContactData [firstName=test1332865178, lastName=test-1698860894, address=test801666360, homePhoneFirst=test1994659296, mobilePhone=, workPhone=test984587036, mailFirst=, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-544915199, homePhoneSecond=test1104595387, firstPlusLastName=test1332865178 test-1698860894]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContactCreationWithValidData -->
-        <test-method status="PASS" signature="testContactCreationWithValidData(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@36b98809]" name="testContactCreationWithValidData" duration-ms="2663" started-at="2014-01-11T13:36:43Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ContactData [firstName=, lastName=test-1889377468, address=test859213615, homePhoneFirst=test2115862285, mobilePhone=test1922889463, workPhone=test1042710803, mailFirst=test1720809463, mailSecond=test-103841786, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-1986044429, homePhoneSecond=test1554947832, firstPlusLastName= test-1889377468]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContactCreationWithValidData -->
-        <test-method status="PASS" signature="testContactCreationWithValidData(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@36b98809]" name="testContactCreationWithValidData" duration-ms="2907" started-at="2014-01-11T13:36:46Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ContactData [firstName=, lastName=, address=, homePhoneFirst=test-1366479801, mobilePhone=test-1960743082, workPhone=test1628816695, mailFirst=, mailSecond=test1247358041, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=, homePhoneSecond=test514444366, firstPlusLastName= ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContactCreationWithValidData -->
-        <test-method status="PASS" signature="testContactCreationWithValidData(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@36b98809]" name="testContactCreationWithValidData" duration-ms="2505" started-at="2014-01-11T13:36:48Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ContactData [firstName=, lastName=, address=, homePhoneFirst=test217472349, mobilePhone=test1620749669, workPhone=, mailFirst=, mailSecond=test-677235276, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-1474608520, homePhoneSecond=test288196806, firstPlusLastName= ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContactCreationWithValidData -->
-        <test-method status="PASS" signature="testContactCreationWithValidData(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@36b98809]" name="testContactCreationWithValidData" duration-ms="2790" started-at="2014-01-11T13:36:51Z" data-provider="randomValidContactGenerator" finished-at="2014-01-11T13:36:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ContactData [firstName=test-311099488, lastName=, address=test204067393, homePhoneFirst=test-1325611741, mobilePhone=, workPhone=, mailFirst=test-1841469529, mailSecond=, birthDay=1, birthMonth=May, birthYear=1987, groupForContact=null, addressSecond=test-1083699166, homePhoneSecond=test-2061053508, firstPlusLastName=test-311099488 ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContactCreationWithValidData -->
-      </class> <!-- com.example.tests.ContactCreationTests -->
-      <class name="com.example.tests.GroupModificationTests">
-        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@527308ce]" name="modifySomeGroup" duration-ms="1860" started-at="2014-01-11T13:36:15Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test-1938191808, header=, footer=test1230658291]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeGroup -->
-        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@527308ce]" name="modifySomeGroup" duration-ms="1413" started-at="2014-01-11T13:36:17Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test1066300922, header=test-573439147, footer=test1864200695]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeGroup -->
-        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@527308ce]" name="modifySomeGroup" duration-ms="1325" started-at="2014-01-11T13:36:18Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=, header=test1177978206, footer=test-2087305655]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeGroup -->
-        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@527308ce]" name="modifySomeGroup" duration-ms="1372" started-at="2014-01-11T13:36:20Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=test159948097, header=test-1226326087, footer=test-536397232]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeGroup -->
-        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@527308ce]" name="modifySomeGroup" duration-ms="1470" started-at="2014-01-11T13:36:21Z" data-provider="randomValidGroupGenerator" finished-at="2014-01-11T13:36:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [groupname=, header=test-444730668, footer=test-1501050145]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeGroup -->
-      </class> <!-- com.example.tests.GroupModificationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

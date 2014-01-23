@@ -29,10 +29,10 @@ public class TestBase {
 	  public Iterator<Object[]>	randomValidGroupGenerator() {
 		  List<Object[]> list = new ArrayList<Object[]>();
 		  for (int i = 0; i < 5; i++) {
-			  GroupData group = new GroupData();
-			  group.groupname = generateRandomString();
-			  group.header = generateRandomString();
-		      group.footer = generateRandomString();
+			  GroupData group = new GroupData()
+			  	.withGroupname(generateRandomString())
+			  	.withHeader(generateRandomString())
+			  	.withFooter(generateRandomString());
 			  list.add(new Object[]{group});	  
 		  }
 		  return list.iterator();
@@ -42,22 +42,22 @@ public class TestBase {
 	  public Iterator<Object[]> randomValidContactGenerator() {
 		  List<Object[]> list = new ArrayList<Object[]>();
 		  for (int i = 0; i < 5; i++) {
-			  ContactData contact = new ContactData();
-			  contact.firstName = generateRandomString();
-			  contact.lastName = generateRandomString();
-			  contact.address = generateRandomString();
-			  contact.homePhoneFirst = generateRandomString();
-			  contact.mobilePhone = generateRandomString();
-			  contact.workPhone = generateRandomString();
-			  contact.mailFirst = generateRandomString();
-			  contact.mailSecond = generateRandomString();
-			  contact.birthDay = "1";
-			  contact.birthMonth = "May";
-			  contact.birthYear = "1987";
-			  //contact.groupForContact = generateRandomString();
-			  contact.addressSecond = generateRandomString();
-			  contact.homePhoneSecond = generateRandomString();
-			  contact.firstPlusLastName = " ";
+			  ContactData contact = new ContactData()
+			  	.withFirstName(generateRandomString())
+			  	.withLastName(generateRandomString())
+			  	.withAddress(generateRandomString())
+			  	.withHomePhoneFirst(generateRandomString())
+			  	.withMobilePhone(generateRandomString())
+			  	.withWorkPhone(generateRandomString())
+			  	.withMailFirst(generateRandomString())
+			  	.withMailSecond(generateRandomString())
+			  	.withBirthDay("1")
+			  	.withBirthMonth("May")
+			  	.withBirthYear("1987")
+			  	/*.withGroupForContact("")*/ 
+			  	.withAddressSecond(generateRandomString())
+			  	.withHomePhoneSecond(generateRandomString())
+			  	.withAddressSecond(generateRandomString());		
 			  list.add(new Object[]{contact});
 		  }
 		  return list.iterator();
@@ -71,5 +71,6 @@ public class TestBase {
 			  return "test" + rnd.nextInt(); 
 		  }	  
 	  }	  
+
 }
 
