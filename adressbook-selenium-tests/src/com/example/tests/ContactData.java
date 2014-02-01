@@ -35,7 +35,7 @@ public class ContactData implements Comparable<ContactData>{
 		this.birthDay = birthDay;
 		this.birthMonth = birthMonth;
 		this.birthYear = birthYear;
-		//this.groupForContact = groupForContact;
+		this.groupForContact = groupForContact;
 		this.addressSecond = addressSecond;
 		this.homePhoneSecond = homePhoneSecond;			
 	}
@@ -194,6 +194,11 @@ public class ContactData implements Comparable<ContactData>{
 				return false;
 		} else if (!firstName.equals(other.firstName))
 			return false;
+		if (lastName == null) {
+			if (other.lastName != null)
+				return false;
+		} else if (!lastName.equals(other.lastName))
+			return false;
 		return true;
 	}
 
@@ -210,8 +215,15 @@ public class ContactData implements Comparable<ContactData>{
 	}
 
 	@Override
-	public int compareTo(ContactData other) {		
-		return this.firstName.toLowerCase().compareTo(other.firstName.toLowerCase());
+	public int compareTo(ContactData other) {
+		int result = 0;
+		int resultLastName = this.lastName.toLowerCase().compareTo(other.lastName.toLowerCase());
+		if (resultLastName != 0)
+			return resultLastName;
+		int resultFirstName = this.lastName.toLowerCase().compareTo(other.lastName.toLowerCase());
+		if (resultFirstName != 0)
+			return resultFirstName;
+		return result;
 	}
 	
 }	

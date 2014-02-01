@@ -28,7 +28,7 @@ public class TestBase {
 	  @DataProvider	
 	  public Iterator<Object[]>	randomValidGroupGenerator() {
 		  List<Object[]> list = new ArrayList<Object[]>();
-		  for (int i = 0; i < 5; i++) {
+		  for (int i = 0; i < 3; i++) {
 			  GroupData group = new GroupData()
 			  	.withGroupname(generateRandomString())
 			  	.withHeader(generateRandomString())
@@ -41,7 +41,7 @@ public class TestBase {
 	  @DataProvider	
 	  public Iterator<Object[]> randomValidContactGenerator() {
 		  List<Object[]> list = new ArrayList<Object[]>();
-		  for (int i = 0; i < 5; i++) {
+		 for (int i = 0; i <3; i++) {
 			  ContactData contact = new ContactData()
 			  	.withFirstName(generateRandomString())
 			  	.withLastName(generateRandomString())
@@ -54,7 +54,7 @@ public class TestBase {
 			  	.withBirthDay("1")
 			  	.withBirthMonth("May")
 			  	.withBirthYear("1987")
-			  	/*.withGroupForContact("")*/ 
+			  	.withGroupForContact("-") 
 			  	.withAddressSecond(generateRandomString())
 			  	.withHomePhoneSecond(generateRandomString())
 			  	.withAddressSecond(generateRandomString());		

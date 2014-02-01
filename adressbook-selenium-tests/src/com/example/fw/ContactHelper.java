@@ -20,29 +20,6 @@ public class ContactHelper extends HelperBase {
 	
 	private SortedListOf<ContactData> cachedContacts;
 	
-	/*
-	public SortedListOf<ContactData> getContacts() {
-		if (cachedContacts  == null) {
-			rebuildCacheContacts();
-		}
-		return cachedContacts;		
-	}
-	
-	private void rebuildCacheContacts() {
-		cachedContacts = new SortedListOf<ContactData>();
-		manager.navigateTo().mainPage();
-		//List<WebElement> tableRows = driver.findElements(By.tagName("tr"));
-		List<WebElement> tableRows = driver.findElements(By.name("entry"));	
-		for (WebElement row : tableRows) {			
-			 List<WebElement> cells = row.findElements(By.tagName("td"));
-			 String firstName = cells.get(3).getText(); //3 - поле last name
-		    //String lastName = cells.get(2).getText();
-		     cachedContacts.add(new ContactData().withFirstName(firstName));		     
-		    //cachedContacts.add(new ContactData().withLastName(lastName));
-		 }		
-	}
-	*/
-	
 	public SortedListOf<ContactData> getContacts() {
 		if (cachedContacts == null)
 			rebuildCacheContacts();
@@ -55,13 +32,29 @@ public class ContactHelper extends HelperBase {
 		List<WebElement> rows = driver.findElements(By.xpath("//tr[@name='entry']"));
 		for (int i = 0; i < rows.size(); i++) {
 				WebElement row = rows.get(i);
-				String firstName = row.findElement(By.xpath("./td[3]")).getText();
+				String firstName = row.findElement(By.xpath("./td[3]")).getText();	
 				String lastName = row.findElement(By.xpath("./td[2]")).getText();
-				String homePhoneFirst = row.findElement(By.xpath("./td[5]")).getText();				
+				if (firstName == null)
+					firstName = "";
+				if (lastName == null)
+					lastName = "";	
+				//String homePhoneFirst = row.findElement(By.xpath("./td[5]")).getText();				
 				cachedContacts.add(new ContactData()											
 											.withFirstName(firstName)
-											.withLastName(lastName)
-											.withHomePhoneFirst(homePhoneFirst));			                                             
+											.withLastName(lastName)											
+		  									.withAddress("")
+		  									.withHomePhoneFirst("")
+		  									.withMobilePhone("")
+		  									.withWorkPhone("")
+		  									.withMailFirst("")
+		  									.withMailSecond("")
+		  									.withBirthDay("")
+		  									.withBirthMonth("")
+		  									.withBirthYear("")
+		  									.withGroupForContact("") 
+		  									.withAddressSecond("")
+		  									.withHomePhoneSecond("")
+		  									.withAddressSecond(""));
 		}
 	}
 	
@@ -71,7 +64,7 @@ public class ContactHelper extends HelperBase {
 		fillContactForm(contact,CREATION);
     	submitContactCreation();
     	returnToHomePage();
-    	cachedContacts = null;
+    	rebuildCacheContacts();	
 		return this;		
 	}	
 
@@ -89,7 +82,7 @@ public class ContactHelper extends HelperBase {
 		manager.navigateTo().mainPage();
 		selectContactByEdit(index);
 		submitContactDeletion();
-		returnToHomePage();
+		returnToHomePage();		
 		rebuildCacheContacts();
 		return this;
 	}
@@ -117,8 +110,7 @@ public class ContactHelper extends HelperBase {
         	}
         }	    
 	    type(By.name("address2"), contact.getAddressSecond());
-	    type(By.name("phone2"), contact.getHomePhoneSecond());
-	    //contact.getFirstPluslastName();
+	    type(By.name("phone2"), contact.getHomePhoneSecond());	   
 	    return this;
 	}
 
@@ -129,7 +121,7 @@ public class ContactHelper extends HelperBase {
 
 	public ContactHelper submitContactCreation() {
 		click(By.name("submit"));
-		rebuildCacheContacts();
+		cachedContacts = null;
 		return this;
 	}
 
