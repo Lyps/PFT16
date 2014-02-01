@@ -38,7 +38,7 @@ public class ContactHelper extends HelperBase {
 					firstName = "";
 				if (lastName == null)
 					lastName = "";	
-				//String homePhoneFirst = row.findElement(By.xpath("./td[5]")).getText();				
+				//String homePhoneFirst = row.findElement(By.xpath("./td[5]")).getText();	הכה			
 				cachedContacts.add(new ContactData()											
 											.withFirstName(firstName)
 											.withLastName(lastName)											
@@ -131,8 +131,7 @@ public class ContactHelper extends HelperBase {
 	}
 
 	public ContactHelper selectContactByEdit(int index) {
-		click(By.xpath("(//img[@alt='Edit'])[" + (index + 1) + "]"));	
-		//driver.get(manager.baseUrl + "/addressbookv4.1.4/edit.php?id=" + (index+1));
+		click(By.xpath("(//img[@alt='Edit'])[" + (index + 1) + "]"));		
 		return this;	
 	}
 	

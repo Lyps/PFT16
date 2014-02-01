@@ -16,7 +16,7 @@ public abstract class HelperBase {
 	
 	public HelperBase(ApplicationManager manager) {
 		this.manager = manager;
-		this.driver = manager.driver;
+		this.driver = manager.driver; //test
 	}
 
 	public boolean isElementPresent(By by) {

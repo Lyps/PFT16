@@ -10,7 +10,7 @@ public class NavigationHelper extends HelperBase {
 
 	public void mainPage() {
 		if (! onMainPage()) {
-			click(By.linkText("home"));
+			click(By.linkText("home")); //test
 		}		
 	}
 

@@ -41,6 +41,7 @@ public class GroupHelper extends HelperBase {
     	submitGroupCreation();
     	returnToGroupsPage();	
     	rebuildCacheGroups();
+    	//contactForequal
     	return this;
 	}
 	

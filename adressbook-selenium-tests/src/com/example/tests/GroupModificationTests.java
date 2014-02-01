@@ -22,7 +22,7 @@ public class GroupModificationTests extends TestBase {
 	    app.getGroupHelper().createModify(group,index);
 			
 		// save new state
-	    SortedListOf<GroupData > newList = app.getGroupHelper().getGroups();
+	    SortedListOf<GroupData > newList = app.getGroupHelper().getGroups(); //bla
 	    
 	    // compare states
 	    assertThat(newList, equalTo(oldList.without(index).withAdded(group)));

@@ -15,7 +15,7 @@ public class GroupCreationTests extends TestBase {
 	SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();
     
     //actions
-    app.getGroupHelper().createGroup(group);
+    app.getGroupHelper().createGroup(group); //bla
     
     // save new state
     SortedListOf<GroupData > newList = app.getGroupHelper().getGroups();

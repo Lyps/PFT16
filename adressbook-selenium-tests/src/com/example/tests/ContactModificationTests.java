@@ -19,7 +19,7 @@ public class ContactModificationTests extends TestBase {
 		SortedListOf<ContactData> oldList = app.getContactHelper().getContacts();
 	    
 	    Random rnd = new Random();
-	    int index = rnd.nextInt(oldList.size()-1);
+	    int index = rnd.nextInt(oldList.size()-1); //bla
 	    
 	    //actions
 	    app.getContactHelper().contactModify(contact,index,MODIFICATION);

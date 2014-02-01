@@ -23,7 +23,7 @@ public class ApplicationManager {
 		driver.get(baseUrl + "/addressbookv4.1.4/");
 		
 	  /*
-	  //"Неленивая" инициализация 
+	  "Неленивая" инициализация 
 	  navigationHelper = new NavigationHelper(this);
 	  groupHelper = new GroupHelper(this);
 	  contactHelper = new ContactHelper(this);

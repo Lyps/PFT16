@@ -2,7 +2,7 @@ package com.example.tests;
 
 public class ContactData implements Comparable<ContactData>{
 	private String firstName;
-	private String lastName;
+	private String lastName; //bla
 	private String address;
 	private String homePhoneFirst;
 	private String mobilePhone;

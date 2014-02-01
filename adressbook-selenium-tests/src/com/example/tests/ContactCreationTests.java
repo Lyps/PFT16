@@ -13,7 +13,7 @@ public class ContactCreationTests extends TestBase {
 
   @Test(dataProvider = "randomValidContactGenerator")
   public void testContactCreationWithValidData(ContactData contact) throws Exception {
-    // save old state
+    // save old state bla
 	SortedListOf<ContactData> oldList = app.getContactHelper().getContacts();
     
     //actions
