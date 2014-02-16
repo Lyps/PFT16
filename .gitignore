@@ -1,5 +1,7 @@
 *.class
-/test-output
+/addressbook-java-tests/test-output
+/addressbook-selenium-tests/test-output
+/addressbook-native-tests/test-output
 # Package Files #
 *.jar
 *.war
