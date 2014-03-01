@@ -58,7 +58,7 @@ public class GroupDataGenerator {
 	private static void saveGroupsToCsvFile(List<GroupData> groups, File file) throws IOException {
 		FileWriter writer = new FileWriter(file);
 		for (GroupData group : groups) {
-			writer.write(group.getGroupname() + "," + group.getHeader() + "," + group.getFooter() + ",!" + "\n");
+			writer.write(group.getName() + "," + group.getHeader() + "," + group.getFooter() + ",!" + "\n");
 		}
 		writer.close();
 	}
@@ -71,7 +71,7 @@ public class GroupDataGenerator {
 		while (line != null) {
 			String[] part = line.split(",");
 			GroupData group = new GroupData()
-				.withGroupname(part[0])
+				.withName(part[0])
 				.withHeader(part[1])
 				.withFooter(part[2]);
 			list.add(group);
@@ -85,7 +85,7 @@ public class GroupDataGenerator {
 			  List<GroupData> list = new ArrayList<GroupData>();
 			  for (int i = 0; i < 3; i++) {
 				  GroupData group = new GroupData()
-				  	.withGroupname(generateRandomString())
+				  	.withName(generateRandomString())
 				  	.withHeader(generateRandomString())
 				  	.withFooter(generateRandomString());
 				  list.add(group);	  

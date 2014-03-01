@@ -16,10 +16,11 @@ public class ContactModificationTests extends TestBase {
 	@Test(dataProvider = "randomValidContactGenerator")
 	public void modifySomeContact(ContactData contact) {
 		// save old state
-		SortedListOf<ContactData> oldList = app.getContactHelper().getContacts();
+		SortedListOf<ContactData> oldList
+			= new SortedListOf<ContactData>(app.getHibernateHelper().listContacts());
 	    
 	    Random rnd = new Random();
-	    int index = rnd.nextInt(oldList.size()-1); //bla
+	    int index = rnd.nextInt(oldList.size()-1); 
 	    
 	    //actions
 	    app.getContactHelper().contactModify(contact,index,MODIFICATION);

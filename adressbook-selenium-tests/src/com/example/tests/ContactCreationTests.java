@@ -27,7 +27,8 @@ public class ContactCreationTests extends TestBase {
   //@Test(dataProvider = "randomValidContactGenerator")
   public void testContactCreationWithValidData(ContactData contact) throws Exception {
     // save old state
-	SortedListOf<ContactData> oldList = app.getContactHelper().getContacts();
+	SortedListOf<ContactData> oldList 
+		= new SortedListOf<ContactData>(app.getHibernateHelper().listContacts());
     
     //actions
     app.getContactHelper().createContact(contact,CREATION);

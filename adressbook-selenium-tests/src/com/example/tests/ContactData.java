@@ -1,8 +1,9 @@
 package com.example.tests;
 
 public class ContactData implements Comparable<ContactData>{
+	private String id;
 	private String firstName;
-	private String lastName; //bla
+	private String lastName; 
 	private String address;
 	private String homePhoneFirst;
 	private String mobilePhone;
@@ -40,6 +41,14 @@ public class ContactData implements Comparable<ContactData>{
 		this.homePhoneSecond = homePhoneSecond;			
 	}
 
+	public ContactData withId(String id) {
+		this.id = id;
+		return this;
+	}
+	
+	public String getId() {
+		return id;
+	}
 
 	public ContactData withFirstName(String firstName) {
 		this.firstName = firstName;
@@ -171,6 +180,65 @@ public class ContactData implements Comparable<ContactData>{
 	}
 
 
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public void setHomePhoneFirst(String homePhoneFirst) {
+		this.homePhoneFirst = homePhoneFirst;
+	}
+
+	public void setMobilePhone(String mobilePhone) {
+		this.mobilePhone = mobilePhone;
+	}
+
+	public void setWorkPhone(String workPhone) {
+		this.workPhone = workPhone;
+	}
+
+	public void setMailFirst(String mailFirst) {
+		this.mailFirst = mailFirst;
+	}
+
+	public void setMailSecond(String mailSecond) {
+		this.mailSecond = mailSecond;
+	}
+
+	public void setBirthDay(String birthDay) {
+		this.birthDay = birthDay;
+	}
+
+	public void setBirthMonth(String birthMonth) {
+		this.birthMonth = birthMonth;
+	}
+
+	public void setBirthYear(String birthYear) {
+		this.birthYear = birthYear;
+	}
+
+	public void setGroupForContact(String groupForContact) {
+		this.groupForContact = groupForContact;
+	}
+
+	public void setAddressSecond(String addressSecond) {
+		this.addressSecond = addressSecond;
+	}
+
+	public void setHomePhoneSecond(String homePhoneSecond) {
+		this.homePhoneSecond = homePhoneSecond;
+	}
 
 	@Override
 	public int hashCode() {

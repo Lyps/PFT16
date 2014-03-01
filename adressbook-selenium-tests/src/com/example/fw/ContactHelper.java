@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import com.example.tests.ContactData;
 import com.example.utils.SortedListOf;
 
-public class ContactHelper extends HelperBase {
+public class ContactHelper extends WebDriverHelperBase {
 	
 	public static boolean CREATION = true;
 	public static boolean MODIFICATION = false;
@@ -18,6 +18,7 @@ public class ContactHelper extends HelperBase {
 		super(manager);
 	}
 	
+	
 	private SortedListOf<ContactData> cachedContacts;
 	
 	public SortedListOf<ContactData> getContacts() {
@@ -25,7 +26,7 @@ public class ContactHelper extends HelperBase {
 			rebuildCacheContacts();
 		return cachedContacts;
 	}
-		
+			
 	private void rebuildCacheContacts() {
 		cachedContacts = new SortedListOf<ContactData>();		
 		manager.navigateTo().mainPage();
@@ -58,13 +59,15 @@ public class ContactHelper extends HelperBase {
 		}
 	}
 	
+	
 	public ContactHelper createContact(ContactData contact, boolean formType) {
 		manager.navigateTo().mainPage();
     	initNewContact();    
 		fillContactForm(contact,CREATION);
     	submitContactCreation();
     	returnToHomePage();
-    	rebuildCacheContacts();	
+    	rebuildCacheContacts();
+    	//manager.getModel().addContact(contact);
 		return this;		
 	}	
 
@@ -74,7 +77,8 @@ public class ContactHelper extends HelperBase {
 		fillContactForm(contact,MODIFICATION);
 		submitContactModification();
 		returnToHomePage();
-		rebuildCacheContacts();	
+		rebuildCacheContacts();
+		//manager.getModel().removeContact(index).addContact(contact);
 		return this;
 	}
 	
@@ -84,6 +88,7 @@ public class ContactHelper extends HelperBase {
 		submitContactDeletion();
 		returnToHomePage();		
 		rebuildCacheContacts();
+		//manager.getModel().removeContact(index);
 		return this;
 	}
 
@@ -121,7 +126,7 @@ public class ContactHelper extends HelperBase {
 
 	public ContactHelper submitContactCreation() {
 		click(By.name("submit"));
-		cachedContacts = null;
+		//cachedContacts = null;
 		return this;
 	}
 

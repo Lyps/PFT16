@@ -15,13 +15,14 @@ public class ContactRemovalTests extends TestBase {
 		app.navigateTo().mainPage();
 		
 	    // save old state
-		SortedListOf<ContactData> oldList = app.getContactHelper().getContacts();
+		SortedListOf<ContactData> oldList 
+			= new SortedListOf<ContactData>(app.getHibernateHelper().listContacts());
 	    
 	    Random rnd = new Random();
 	    int index = rnd.nextInt(oldList.size()-1);
 	    
 	    //actions
-		app.getContactHelper().deleteContact(index);  //bla  			
+		app.getContactHelper().deleteContact(index);  			
 	    		    
 	    // save new state
 		SortedListOf<ContactData> newList = app.getContactHelper().getContacts();

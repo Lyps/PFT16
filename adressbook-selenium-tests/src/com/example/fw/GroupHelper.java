@@ -8,11 +8,12 @@ import org.openqa.selenium.WebElement;
 import com.example.tests.GroupData;
 import com.example.utils.SortedListOf;
 
-public class GroupHelper extends HelperBase {
+public class GroupHelper extends WebDriverHelperBase {
 
 	public GroupHelper(ApplicationManager manager) {
 		super(manager);
 	}
+	
 	
 	private SortedListOf<GroupData> cachedGroups;
 		
@@ -22,17 +23,18 @@ public class GroupHelper extends HelperBase {
 		}
 		return cachedGroups;		
 	}
-	
+		
 	private void rebuildCacheGroups() {
 		cachedGroups = new SortedListOf<GroupData>();		
 		manager.navigateTo().groupsPage();		
 		List<WebElement> checkboxes = driver.findElements(By.name("selected[]"));
 		for (WebElement checkbox:checkboxes) {			
 			String title = checkbox.getAttribute("title");
-			String groupname = title.substring("Select (".length(), title.length() - ")".length());
-			cachedGroups.add(new GroupData().withGroupname(groupname));
+			String name = title.substring("Select (".length(), title.length() - ")".length());
+			cachedGroups.add(new GroupData().withName(name));
 		}			
 	}
+	
 
 	public GroupHelper createGroup(GroupData group) {
 		manager.navigateTo().groupsPage();
@@ -41,7 +43,7 @@ public class GroupHelper extends HelperBase {
     	submitGroupCreation();
     	returnToGroupsPage();	
     	rebuildCacheGroups();
-    	//contactForequal
+    	//manager.getModel().addGroup(group);
     	return this;
 	}
 	
@@ -52,6 +54,7 @@ public class GroupHelper extends HelperBase {
 		submitGroupModification();
 		returnToGroupsPage();
 		rebuildCacheGroups();
+		manager.getModel().removeGroup(index).addGroup(group);
 		return this;
 	}
 	
@@ -61,6 +64,7 @@ public class GroupHelper extends HelperBase {
 		submitGroupDeletion();
 		returnToGroupsPage();
 		rebuildCacheGroups();
+		//manager.getModel().removeGroup(index);
 		return this;
 	}
 
@@ -83,7 +87,7 @@ public class GroupHelper extends HelperBase {
 	}
 	
 	public GroupHelper fillGroupForm(GroupData group) {
-		type(By.name("group_name"), group.getGroupname());
+		type(By.name("group_name"), group.getName());
 		type(By.name("group_header"), group.getHeader());
 		type(By.name("group_footer"), group.getFooter());
 		return this;
