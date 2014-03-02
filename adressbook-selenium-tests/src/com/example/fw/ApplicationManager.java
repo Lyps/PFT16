@@ -21,8 +21,9 @@ public class ApplicationManager {
 	
 	public ApplicationManager(Properties properties) {
 	  this.properties = properties;	
-	 // model = new ApplicationModel();
-	  //model.setGroups(getHibernateHelper().listGroups());
+	  model = new ApplicationModel();
+	  model.setGroups(getHibernateHelper().listGroups());
+	  model.setContacts(getHibernateHelper().listContacts());
 	  /*
 	  "Неленивая" инициализация 
 	  navigationHelper = new NavigationHelper(this);
@@ -76,7 +77,7 @@ public class ApplicationManager {
 		      
 			  baseUrl = properties.getProperty("baseUrl");
 			  //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				driver.get(baseUrl);				
+			  driver.get(baseUrl);				
 
 		}	
 		return driver;
@@ -87,6 +88,10 @@ public class ApplicationManager {
 			hibernateHelper = new HibernateHelper(this);
 		}	
 		return hibernateHelper;		
+	}
+	
+	public String getProperty(String key) {
+		return properties.getProperty(key);
 	}
 	
 }

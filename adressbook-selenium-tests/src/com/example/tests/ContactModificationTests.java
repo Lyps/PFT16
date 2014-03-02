@@ -16,9 +16,8 @@ public class ContactModificationTests extends TestBase {
 	@Test(dataProvider = "randomValidContactGenerator")
 	public void modifySomeContact(ContactData contact) {
 		// save old state
-		SortedListOf<ContactData> oldList
-			= new SortedListOf<ContactData>(app.getHibernateHelper().listContacts());
-	    
+		SortedListOf<ContactData> oldList = app.getModel().getContacts();
+				    
 	    Random rnd = new Random();
 	    int index = rnd.nextInt(oldList.size()-1); 
 	    
@@ -26,9 +25,21 @@ public class ContactModificationTests extends TestBase {
 	    app.getContactHelper().contactModify(contact,index,MODIFICATION);
 		
 	    // save new state
-	    SortedListOf<ContactData> newList = app.getContactHelper().getContacts();
+	    //SortedListOf<ContactData> newList = app.getContactHelper().getContacts();
+	    SortedListOf<ContactData> newList = app.getModel().getContacts();
 	    
 	    //compare states
 	    assertThat(newList, equalTo(oldList.without(index).withAdded(contact)));
+	    
+	    if (wantToCheck()) {
+	    	if ("yes".equals(app.getProperty("check.db"))) {
+	    		 assertThat(app.getModel().getContacts(), equalTo(app.getHibernateHelper().listContacts()));
+	    	}
+	        
+	    	if ("yes".equals(app.getProperty("check.ui"))) {
+	    		assertThat(app.getModel().getContacts(), equalTo(app.getContactHelper().getUiContacts()));
+	    	}
+	    }
+	    
 	}
 }

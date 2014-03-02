@@ -35,10 +35,9 @@ public class ApplicationModel {
 		return new SortedListOf<ContactData>(contacts);
 	}
 	
-	public void setContacts(SortedListOf<ContactData> contacts) {
+	public void setContacts(List<ContactData> contacts) {
 		this.contacts = new SortedListOf<ContactData>(contacts);
 	}
-
 
 	public ApplicationModel addContact(ContactData contact) {
 		contacts.add(contact);
